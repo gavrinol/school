@@ -40,9 +40,5 @@ public class StudentController {
         return studentService.delete(id);
     }
 
-    @GetMapping
-    public List<Student> studentsByAge(@RequestParam("age") int age) {
-        return studentService.studentsByAge(age);
-    }
 }
 
